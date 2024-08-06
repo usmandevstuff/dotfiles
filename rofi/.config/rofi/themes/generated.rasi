@@ -1,0 +1,20 @@
+* {
+    bg-col: #191724;
+    bg-col-transparent: #191724dd;
+    bg-col-element: #191724df;
+    bg-col-light: #c4a7e7;
+    border-col: #c4a7e7;
+    selected-col: #c4a7e7;
+    tab: #c4a7e7;
+    tab-selected: #191724;
+    fg-col: #e0def4;
+    fg-col2: #191724;
+    blank: #26233a;
+    blank-underline: #1f1d2e;
+    button: #c4a7e7;
+    button-underline: #ae91d0;
+    window: #353154;
+    window-underline: #2d2a47;
+
+    width: 600;
+}

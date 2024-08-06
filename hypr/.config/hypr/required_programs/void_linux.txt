@@ -1,0 +1,35 @@
+cliphist
+hyprland
+hyprland-protocols
+xorg
+mesa-dri
+Waybar
+alacritty
+rofi-wayland # PENDING NIX
+swww # PENDING NIX
+libnotify
+notification-daemon
+SwayNotificationCenter
+NetworkManager
+network-manager-applet
+bluez
+blueman
+papirus-icon-theme
+noto-fonts-emoji
+lxsession
+grimblast # PENDING NIX
+brightnessctl
+light
+nwg-look
+yad
+sox
+mint-themes # PENDING
+xcursor-simp1e-themes # PENDING
+hyprlock
+hypridle
+qt5-wayland
+eww-wayland # PENDING NIX
+git
+xdg-desktop-portal
+xdg-desktop-portal-gtk
+xdg-desktop-portal-hyprland
