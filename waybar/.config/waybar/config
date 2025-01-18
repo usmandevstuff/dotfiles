@@ -7,11 +7,11 @@
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces", "hyprland/window"],
     //"modules-center": ["hyprland/window"],
-    "modules-right": ["custom/swaync", "custom/wallpaper", "custom/menu", "tray", "pulseaudio", "cpu", "memory", "backlight", "battery", "battery#bat2", "clock", "custom/powermenu"],
+    "modules-right": ["custom/swaync", "custom/wallpaper", "tray", "pulseaudio", "cpu", "memory", "backlight", "battery", "battery#bat2", "clock", "custom/powermenu"],
     // Modules configuration
     "custom/powermenu": {
 	"format": " ",
-	"on-click": "~/.config/hypr/waybar/scripts/powermenu.sh",
+	"on-click": "~/.config/waybar/scripts/powermenu.sh",
 	"tooltip": false,
     },
     "custom/wallpaper": {
@@ -21,13 +21,13 @@
     },
     "custom/swaync": {
 	"format": " ",
-	"on-click": "~/.config/hypr/swaync/scripts/tray_waybar.sh",
+	"on-click": "~/.config/swaync/scripts/tray_waybar.sh",
     "on-click-right": "swaync-client -C",
 	"tooltip": false,
     },
     "custom/menu": {
 	"format": " ",
-	"on-click": "~/.config/hypr/waybar/scripts/bar_menu.sh",
+	"on-click": "~/.config/waybar/scripts/bar_menu.sh",
 	"tooltip": false,
     },
     "wlr/workspaces": {
@@ -115,8 +115,8 @@
         "format": "{percent}% {icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""],
         "tooltip-format": "Left click to save brightness.",
-	    "on-click": "~/.config/hypr/waybar/scripts/save_brightness.sh",
-	    "on-click-right": "~/.config/hypr/waybar/scripts/load_brightness.sh",
+	//    "on-click": "~/.config/hypr/waybar/scripts/save_brightness.sh",
+	//    "on-click-right": "~/.config/waybar/scripts/load_brightness.sh",
     },
     "battery": {
         "states": {

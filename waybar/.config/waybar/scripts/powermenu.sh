@@ -2,4 +2,4 @@
 
 sleep 0.1
 
-$HOME/.config/hypr/eww/scripts/waybar/powermenu & disown
+$HOME/.config/eww/scripts/waybar/powermenu & disown

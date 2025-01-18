@@ -6,7 +6,6 @@
 (defpoll uptime :interval "1s" "scripts/get_uptime")
 (defpoll workspaces-json :interval "30ms" "scripts/bar/get_workspaces")
 (defpoll window-title :interval "30ms" "scripts/bar/get_window")
-(defpoll keybinds :interval "500s" "scripts/get_keybinds")
 
 
 
@@ -90,55 +89,6 @@
            (button :class "bar-menu-button"
                    :onclick onclick
                    label
-           )
-)
-
-(defwidget update-rice-button []
-           (bmb :onclick "scripts/update_rice"
-                :label "Update Rice"
-           )
-)
-
-(defwidget change-theme-button []
-           (bmb :onclick "scripts/change_theme"
-                :label "Change Theme"
-           )
-)
-
-(defwidget open-keybinds-button []
-           (bmb :onclick "scripts/bmb scripts/self open keybinds"
-                :label "Show Binds"
-           )
-)
-
-(defwidget bar-menu-buttons []
-           (box :class "bar-menu-buttons"
-                :orientation "v"
-                :space-evenly false
-                :halign "center"
-                (box :class "sbr-1"
-                     :orientation "v"
-                     :space-evenly true
-                     (change-theme-button)
-                     (update-rice-button)
-                     (open-keybinds-button)
-                )
-           )
-)
-
-(defwidget bar-menu-spacer []
-           (box :class "bar-menu-spacer"
-                :orientation "v"
-                :space-evenly true
-           )
-)
-
-(defwidget bar-menu []
-           (box :space-evenly false
-                :orientation "v"
-                :class "bar-menu"
-                (bar-menu-sliders)
-                (bar-menu-buttons)
            )
 )
 
@@ -277,82 +227,6 @@
            )
 )
 
-(defwidget keybinds []
-           (box :class "keybinds-parent-box"
-                :orientation "v"
-                :space-evenly false
-                (titlebar :title "Keybinds Guide" :close-button-onclick "scripts/close_keybinds_window")
-                (scroll :class "keybinds"
-                        :orientation "v"
-                        :space-evenly false
-                        keybinds
-                )
-           )
-)
-
-(defwidget keybinds-fullscreen []
-           (box :class "keybinds-parent-box"
-                :orientation "v"
-                :space-evenly true
-                (scroll :class "keybinds-fullscreen"
-                        :orientation "v"
-                        :space-evenly false
-                        keybinds
-                )
-           )
-)
-
-(defwidget rice-update-available []
-           (box :class "rice-update-available"
-                :orientation "h"
-                :space-evenly false
-                "Rice Update Available"
-           )
-)
-
-
-
-(defwindow rice-update-available
-           :monitor 0
-           :geometry (geometry :x "10px"
-                               :y "10px"
-                               :width "100px"
-                               :height "20px"
-                               :anchor "top right"
-           )
-           :stacking "bg"
-           :windowtype "normal"
-           :wm-ignore true
-           (rice-update-available)
-)
-
-(defwindow keybinds
-           :monitor 0
-           :geometry (geometry :x "0px"
-                               :y "0px"
-                               :width "70%"
-                               :height "0px"
-                               :anchor "center"
-                     )
-           :stacking "fg"
-           :windowtype "normal"
-           :wm-ignore true
-           (keybinds)
-)
-
-(defwindow keybinds-fullscreen
-           :monitor 0
-           :geometry (geometry :x "0px"
-                               :y "0px"
-                               :width "100%"
-                               :height "100%"
-                               :anchor "bottom center"
-                     )
-           :stacking "fg"
-           :windowtype "normal"
-           :wm-ignore true
-           (keybinds-fullscreen)
-)
 
 (defwindow bar-menu
            :monitor 0
