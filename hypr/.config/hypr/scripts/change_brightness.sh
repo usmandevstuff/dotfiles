@@ -12,11 +12,9 @@ b_mode="$1"
 
 b_factor_step="10"
 b_factor=$(clamp_min $(($(light | cut -f1 -d .) / $b_factor_step)))
-
+echo $b_factor
 if [[ $b_mode == "up" ]]; then
   brightnessctl set $b_factor%+
-elif [[ $b_mode == "down" ]]; then
+elif [[ $b_mode == "down" && $(light | cut -f1 -d .) > 0 ]]; then
   brightnessctl set $b_factor%-
-else
-  notify-send "Hyprland Script (Brightness)" "You seem to be using this script wrong somewhere in your configuration!" -u critical
 fi
