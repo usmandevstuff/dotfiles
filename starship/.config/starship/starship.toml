@@ -102,7 +102,7 @@ truncation_symbol = '../'
 home_symbol = '󱂵 '
 
 [git_branch]
-format = '[$branch]($style)'
+format = '[$branch ]($style)'
 
 [rust]
 symbol = ' '
