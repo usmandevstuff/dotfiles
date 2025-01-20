@@ -26,7 +26,7 @@ white = "#f1efff"
 draw_bold_text_with_bright_colors = true
 
 [font]
-size = 16
+size = 14
 
 [font.bold]
 family = "JetBrainsMono Nerd Font"
@@ -52,7 +52,12 @@ multiplier = 3
 save_to_clipboard = false
 
 [window]
-opacity = 0.92
+opacity = 0.80
+blur = true
+
+[cursor.style]
+shape = "Underline"
+blinking = "Always"
 
 [window.class]
 general = "Alacritty"
