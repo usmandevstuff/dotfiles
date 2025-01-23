@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
- wezterm start || st || alacritty || exit 1
+kitty || wezterm start || st || alacritty || exit 1
