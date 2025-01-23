@@ -5,7 +5,7 @@ local function font_with_fallback(name, params)
 	return wezterm.font_with_fallback(names, params)
 end
 
-local font_name = "JetBrainsMono Nerd Font"
+local font_name = "JetBrainsMonoNL NF"
 
 return {
 	-- OpenGL for GPU acceleration, Software for CPU
@@ -38,7 +38,7 @@ return {
 	default_cursor_style = "BlinkingUnderline",
 
 	-- X11
-	enable_wayland = true,
+	enable_wayland = false,
 
 	-- Keybinds
 	disable_default_key_bindings = true,
@@ -143,10 +143,10 @@ return {
 	bold_brightens_ansi_colors = true,
 	-- Padding
 	window_padding = {
-		left = 25,
-		right = 25,
-		top = 25,
-		bottom = 25,
+		left = 15,
+		right = 15,
+		top = 15,
+		bottom = 15,
 	},
 
 	-- Tab Bar
@@ -158,7 +158,7 @@ return {
 	-- General
 	automatically_reload_config = true,
 	inactive_pane_hsb = { saturation = 1.0, brightness = 1.0 },
-	window_background_opacity = 0.8,
+	window_background_opacity = 0.7,
 	window_close_confirmation = "NeverPrompt",
 	window_frame = { active_titlebar_bg = "#45475a", font = font_with_fallback(font_name, { bold = true }) },
 }

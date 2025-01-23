@@ -10,7 +10,7 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export GPG_TTY="${TTY:-$(tty)}"
 
-export SUDO_PROMPT="passwd: "
+export SUDO_PROMPT="󰚌 Password: "
 export TERMINAL="wezterm"
 export BROWSER="firefox"
 export VISUAL="nvim"
@@ -30,6 +30,7 @@ export XDG_PUBLICSHARE_DIR="$HOME/Public"
 export XDG_DOCUMENTS_DIR="$HOME/Documents"
 export XDG_MUSIC_DIR="$HOME/Music"
 export XDG_PICTURES_DIR="$HOME/Pictures"
+export XDG_SCREENSHOTS_DIR="$HOME/Pictures/screenshots"
 export XDG_VIDEOS_DIR="$HOME/Videos"
 
 ## Comment this to use normal manpager
