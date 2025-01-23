@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
- alacritty || st || wezterm start || exit 1
+ wezterm start || st || alacritty || exit 1

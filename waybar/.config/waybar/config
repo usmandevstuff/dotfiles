@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces", "hyprland/window"],
     //"modules-center": ["hyprland/window"],
-    "modules-right": ["custom/swaync", "custom/wallpaper", "tray", "pulseaudio", "cpu", "memory", "backlight", "battery", "battery#bat2", "clock", "custom/powermenu"],
+    "modules-right": ["custom/swaync", "tray", "pulseaudio", "backlight", "battery", "clock", "custom/powermenu"],
     // Modules configuration
     "custom/powermenu": {
 	"format": " ",
@@ -127,6 +127,7 @@
         "format": "{capacity}% {icon}",
         "format-charging": "{capacity}%  ",
         "format-plugged": "{capacity}%  ",
+	"interval": 2,
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
