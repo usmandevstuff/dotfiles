@@ -1,4 +1,4 @@
-#files: 994	version: 5.9
+#files: 989	version: 5.9
 
 _comps=(
 '-' '_precommand'
@@ -26,7 +26,6 @@ _comps=(
 'admin' '_sccs'
 'afew' '_afew'
 'age' '_age'
-'alacritty' '_alacritty'
 'ali' '_mh'
 'alias' '_alias'
 'amaya' '_webbrowser'
@@ -96,7 +95,6 @@ _comps=(
 'bindkey' '_bindkey'
 'bison' '_bison'
 'bitcoin-cli' '_bitcoin-cli'
-'bluetoothctl' '_bluetoothctl'
 'bmake' '_make'
 'bogofilter' '_bogofilter'
 'bogotune' '_bogofilter'
@@ -163,7 +161,6 @@ _comps=(
 'certtool' '_gnutls'
 'cf' '_cf'
 'cftp' '_twisted'
-'chafa' '_chafa'
 'chage' '_users'
 'chatblade' '_chatblade'
 'chattr' '_chattr'
@@ -199,6 +196,8 @@ _comps=(
 'clusterdb' '_postgresql'
 'cmake' '_cmake'
 'cmp' '_cmp'
+'cmus' '_cmus'
+'cmus-remote' '_cmus'
 'co' '_rcs'
 'code' '_code'
 'coffee' '_coffee'
@@ -307,10 +306,6 @@ _comps=(
 'dsh' '_dsh'
 'dtruss' '_dtruss'
 'du' '_du'
-'_dunst' '_dunst'
-'dunst' '_dunst'
-'_dunstctl' '_dunstctl'
-'dunstctl' '_dunstctl'
 'dvibook' '_dvi'
 'dviconcat' '_dvi'
 'dvicopy' '_dvi'
@@ -364,6 +359,7 @@ _comps=(
 'express' '_webbrowser'
 'extcheck' '_java'
 'extractres' '_psutils'
+'eza' '_eza'
 'fab' '_fab'
 'fail2ban-client' '_fail2ban-client'
 'fakeroot' '_fakeroot'
@@ -479,12 +475,12 @@ _comps=(
 'ggetopt' '_getopt'
 'ggrep' '_grep'
 'ggv' '_gnome-gv'
-'gh' '_gh'
 'ghc' '_ghc'
 'ghci' '_ghc'
 'ghc-pkg' '_ghc'
 'ghead' '_head'
 'ghostscript' '_ghostscript'
+'ghostty' '_ghostty'
 'ghostview' '_pspdf'
 'gid' '_id'
 'ginstall' '_install'
@@ -1087,7 +1083,6 @@ _comps=(
 'podgrep' '_perl_modules'
 'podpath' '_perl_modules'
 'podtoc' '_perl_modules'
-'poetry' '_poetry'
 'poff' '_pon'
 'policytool' '_java'
 'pon' '_pon'
@@ -1367,7 +1362,6 @@ _comps=(
 'svnliteadmin' '_subversion'
 'swaks' '_swaks'
 'swanctl' '_swanctl'
-'swaylock' '_swaylock'
 'swaync' '_swaync'
 'swaync-client' '_swaync-client'
 'swift' '_swift'
@@ -1603,7 +1597,6 @@ _comps=(
 'watcher' '_openstack'
 'wc' '_wc'
 'wemux' '_wemux'
-'wezterm' '_wezterm'
 'wget' '_wget'
 'wg-quick' '_wg-quick'
 'what' '_sccs'
@@ -1901,19 +1894,18 @@ autoload -Uz _afew _age _android _archlinux-java _artisan \
             _tmuxp _tox _tsc _ts-node _udisksctl \
             _ufw _uuidgen _virtualbox _vnstat _wemux \
             _wg-quick _xsel _yarn _yfm _zcash-cli \
-            _zinit _alacritty _bluetoothctl _bootctl _busctl \
-            _bwrap _cargo _chafa _coredumpctl _curl \
-            _dunst _dunstctl _foot _footclient _gh \
-            _hostnamectl _hyprctl _hyprpm _img2sixel _journalctl \
-            _kernel-install _kitty _libinput _localectl _loginctl \
-            _machinectl _meson _mkinitcpio _mpv _networkctl \
-            _ninja _oomctl _pacman _paru _playerctl \
-            _poetry _pulseaudio _resolvectl _rg _run0 \
-            _sd_hosts_or_user_at_host _sd_machines _sd_outputmodes _sd_unit_files _shtab \
-            _swaylock _swaync _swaync-client _swww _systemctl \
+            _zinit _bootctl _busctl _bwrap _cargo \
+            _cmus _coredumpctl _curl _eza _foot \
+            _footclient _ghostty _hostnamectl _hyprctl _hyprpm \
+            _img2sixel _journalctl _kernel-install _kitty _libinput \
+            _localectl _loginctl _machinectl _meson _mkinitcpio \
+            _mpv _networkctl _ninja _oomctl _pacman \
+            _paru _playerctl _pulseaudio _resolvectl _rg \
+            _run0 _sd_hosts_or_user_at_host _sd_machines _sd_outputmodes _sd_unit_files \
+            _shtab _swaync _swaync-client _swww _systemctl \
             _systemd _systemd-analyze _systemd-delta _systemd-inhibit _systemd-nspawn \
             _systemd-path _systemd-run _systemd-tmpfiles _timedatectl _tldr \
-            _udevadm _upower _varlinkctl _wezterm _wl-copy \
+            _udevadm _udisks2 _upower _varlinkctl _wl-copy \
             _wlogout _wl-paste _wpctl _yazi _zoxide \
             _cdr _all_labels _all_matches _alternative _approximate \
             _arg_compile _arguments _bash_completions _cache_invalid _call_function \
