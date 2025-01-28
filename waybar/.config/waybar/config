@@ -81,14 +81,14 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["", "", ""]
+            "default": [" ", " ", " "]
         },
         "on-click": "pavucontrol"
     },
     "custom/swaync": {
             "format": " ",
             "on-click": "~/.config/swaync/scripts/tray_waybar.sh",
-        "on-click-right": "swaync-client -C",
+            "on-click-right": "swaync-client -C",
             "tooltip": false,
         },
     "custom/powermenu": {

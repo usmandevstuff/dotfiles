@@ -1,0 +1,1 @@
+mpv path hwdec=auto dscale=bilinear --profile=fast

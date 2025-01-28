@@ -5,7 +5,8 @@ local function font_with_fallback(name, params)
 	return wezterm.font_with_fallback(names, params)
 end
 
-local font_name = "JetBrainsMonoNL NF"
+-- local font_name = "JetBrainsMonoNL NF"
+local font_name = "MapleMonoNF"
 
 return {
 	-- OpenGL for GPU acceleration, Software for CPU
@@ -30,7 +31,7 @@ return {
 		},
 	},
 	warn_about_missing_glyphs = false,
-	font_size = 14,
+	font_size = 12,
 	line_height = 1.0,
 	dpi = 96.0,
 
@@ -158,7 +159,7 @@ return {
 	-- General
 	automatically_reload_config = true,
 	inactive_pane_hsb = { saturation = 1.0, brightness = 1.0 },
-	window_background_opacity = 0.7,
+	window_background_opacity = 0.9,
 	window_close_confirmation = "NeverPrompt",
 	window_frame = { active_titlebar_bg = "#45475a", font = font_with_fallback(font_name, { bold = true }) },
 }

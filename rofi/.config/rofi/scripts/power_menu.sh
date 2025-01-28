@@ -21,7 +21,8 @@ theme='style-9'
 
 # CMDs
 uptime="`uptime -p | sed -e 's/up //g'`"
-host=`hostname`
+host="archlinux"
+# host=`hostname`
 
 # Options
 shutdown=''
