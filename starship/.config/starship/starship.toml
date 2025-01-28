@@ -95,7 +95,7 @@ error_symbol = '[➜](bold red) '
 
 [directory]
 truncation_length = 2
-truncation_symbol = '../'
+truncation_symbol = '󰉋 /'
 home_symbol = '󱂵 '
 
 [git_branch]
