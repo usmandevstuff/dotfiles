@@ -14,3 +14,5 @@ sleep 2
 # /usr/libexec/xdg-desktop-portal &
 /usr/lib/xdg-desktop-portal &
 logger 'xdg-desktop-portal started'
+/usr/lib/xdg-desktop-portal-gtk &
+logger 'xdg-desktop-portal-gtk started'
