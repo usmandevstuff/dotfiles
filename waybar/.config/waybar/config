@@ -19,9 +19,12 @@
 	"clock",
         "custom/powermenu"
 	],
-        "hyprland/window": {
-                "separate-outputs": true
-        },
+    "hyprland/window": {
+        "format": "| {}",
+        "separate-outputs": true,
+        // "icon": true,
+        // "icon-size": 14,
+    },
     "hyprland/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,

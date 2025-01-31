@@ -101,6 +101,10 @@ home_symbol = '󱂵 '
 [git_branch]
 format = '[$branch ]($style)'
 
+[nodejs]
+symbol = '󰎙 '
+format = '[$symbol]($style)'
+
 [rust]
 symbol = ' '
 format = '[$symbol]($style)'
