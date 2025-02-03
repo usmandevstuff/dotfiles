@@ -1,3 +1,5 @@
+@import "/home/usman/.cache/wal/colors-waybar.css";
+
 @define-color base   #1e1e2e;
 @define-color mantle #181825;
 @define-color crust  #11111b;
@@ -85,7 +87,7 @@ button {
 
 #workspaces button {
     padding: 0 5px;
-    color: @surface2;
+    color: @surface1;
     margin: 4px 0 4px 6px;
     transition: color 200ms ease-in-out;
 }
@@ -95,7 +97,8 @@ button {
 }
 
 #workspaces button.active {
-    color: @mauve;
+    /* color: @mauve; */
+    color: @color1;
 }
 
 #workspaces button.urgent {
@@ -144,7 +147,8 @@ button {
 }
 
 #pulseaudio {
-  color: @mauve;
+  /* color: @mauve; */
+    color: @color5;
 }
 
 #pulseaudio.muted {
