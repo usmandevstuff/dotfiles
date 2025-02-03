@@ -11,8 +11,8 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export GPG_TTY="${TTY:-$(tty)}"
 
 export SUDO_PROMPT="󰚌 Password: "
-export TERMINAL="wezterm"
-export BROWSER="firefox"
+export TERMINAL="foot"
+export BROWSER="zen-browser"
 export VISUAL="nvim"
 export EDITOR="nvim"
 
