@@ -106,7 +106,7 @@ function toppy() {
 }
 
 function cd() {
-	builtin cd "$@" && command ls --group-directories-first --color=auto -F
+	builtin cd "$@" && command exa --group-directories-first --color=auto --icons=auto -F
 }
 
 function git-svn(){

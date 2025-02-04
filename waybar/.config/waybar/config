@@ -74,7 +74,7 @@
 	"interval": 2,
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
+        "format-full": "{capacity}% FULL",
         "format-icons": [" ", " ", " ", " ", " "]
     },
     "network": {
