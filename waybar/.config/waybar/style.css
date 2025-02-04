@@ -39,7 +39,7 @@
 
 window#waybar {
     /*background-color: @crust;*/
-    background: rgba(30, 30, 46, 0.9);
+    background: rgba(30, 30, 46, 0.8);
     color: @text;
     transition-property: background-color;
     transition-duration: .5s;
@@ -78,7 +78,7 @@ button {
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 
 #workspaces button:hover {
-    color: @blue;
+    color: @text;
     box-shadow: inherit;
     text-shadow: inherit;
     background: @crust;
@@ -93,12 +93,12 @@ button {
 }
 
 #workspaces button.selected {
-    color: @blue;
+    color: @text;
 }
 
 #workspaces button.active {
     /* color: @mauve; */
-    color: @color1;
+    color: @text;
 }
 
 #workspaces button.urgent {
@@ -116,7 +116,7 @@ button {
 #pulseaudio,
 #wireplumber,
 #custom-pacman,
-#custom-power,
+#custom-powermenu,
 #tray,
 #mode,
 #idle_inhibitor,
@@ -147,8 +147,7 @@ button {
 }
 
 #pulseaudio {
-  /* color: @mauve; */
-    color: @color5;
+    color: @text;
 }
 
 #pulseaudio.muted {
@@ -171,9 +170,9 @@ button {
     color: @red;
 }
 
-#custom-power {
+#custom-powermenu {
   color: @maroon;
-  margin-right: 5px;
+  margin-right: 0px;
 }
 
 #keyboard-state > label {

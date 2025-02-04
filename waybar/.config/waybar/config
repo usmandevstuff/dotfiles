@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "height": 30,
-    "spacing": 5,
+    "spacing": 0,
     // Choose the order of the modules
     "modules-left": [
         "hyprland/workspaces",
@@ -11,8 +11,10 @@
     //    "hyprland/window"
     //],
     "modules-right": [
+        // "custom/cmus",
         "custom/swaync",
 	"tray",
+        "custom/sep",
         "pulseaudio",
         "backlight",
         "battery",
@@ -30,6 +32,18 @@
         "all-outputs": true,
         "on-click": "activate"
     },
+    "custom/cmus": {
+        "format": "♪ {} | ",
+        // "max-length": 30,
+        "interval": 10,
+        "exec": "cmus-remote -C \"format_print '%a - %t'\"", // artist - title
+        "exec-if": "pgrep cmus",
+        "on-click": "cmus-remote -u",                        //toggle pause
+        "escape": true                                       //handle markup entities
+    },
+    "custom/sep": {
+        "format": "{}|"
+    },
     "tray": {
         // "icon-size": 21,
         "spacing": 10
@@ -37,14 +51,14 @@
     "clock": {
         "tooltip-format": "{:%H:%M}",
         "tooltip": true,
-        "format-alt": "{:%A, %B %d, %Y}",
-	    "format": "{:%I:%M %p}"
+        "format-alt": "| {:%A, %B %d, %Y}",
+        "format": "| {:%I:%M %p}"
     },
     "backlight": {
         // "device": "acpi_video1",
-        "format": "{percent}% {icon}",
+        "format": "| {percent}% {icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""],
-        "tooltip-format": "Left click to save brightness.",
+        "tooltip-format": "Screen Brightness",
 	//    "on-click": "~/.config/hypr/waybar/scripts/save_brightness.sh",
 	//    "on-click-right": "~/.config/waybar/scripts/load_brightness.sh",
     },
@@ -55,8 +69,8 @@
             "critical": 15
         },
         "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}%  ",
-        "format-plugged": "{capacity}%  ",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
 	"interval": 2,
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
@@ -66,8 +80,8 @@
     "network": {
         "format-wifi": "󰤨",
         "format-disconnected": "󰤭",
-				"tooltip-format": "Connected to {essid}",
-				"on-click": "hyprctl dispatch exec '[float]' '$TERMINAL -e nmtui'"
+        "tooltip-format": "Connected to {essid}",
+        "on-click": "hyprctl dispatch exec '[float]' '$TERMINAL -e nmtui'"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
