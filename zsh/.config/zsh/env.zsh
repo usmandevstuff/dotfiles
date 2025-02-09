@@ -1,17 +1,15 @@
 ##
 ## PATH & ENV Var
 ##
-
-export PNPM_HOME="$HOME/.local/share/pnpm"
-export PATH="$HOME/.spicetify:$PATH"
-export PATH="$PNPM_HOME:$PATH"
+export BUN_INSTALL="$HOME/.bun" 
+export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="$HOME/.scripts:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export GPG_TTY="${TTY:-$(tty)}"
 
 export SUDO_PROMPT="󰚌 Password: "
-export TERMINAL="foot"
+export TERMINAL="wezterm"
 export BROWSER="zen-browser"
 export VISUAL="nvim"
 export EDITOR="nvim"

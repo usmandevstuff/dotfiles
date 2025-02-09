@@ -74,6 +74,7 @@
 ; (gtk_accel_path "<Actions>/ThunarWindow/view-location-selector-menu" "")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/sort-by-mtime" "")
 ; (gtk_accel_path "<Actions>/ThunarWindow/edit-menu" "")
+; (gtk_accel_path "<Actions>/ThunarBookmarks/c6596a7def7597eb73e71ed1bedc63b1" "")
 ; (gtk_accel_path "<Actions>/ThunarActionManager/copy" "<Primary>c")
 ; (gtk_accel_path "<Actions>/ThunarWindow/bookmarks-menu" "")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/forward-alt" "Forward")

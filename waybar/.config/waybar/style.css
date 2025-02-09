@@ -1,5 +1,3 @@
-@import "/home/usman/.cache/wal/colors-waybar.css";
-
 @define-color base   #1e1e2e;
 @define-color mantle #181825;
 @define-color crust  #11111b;
@@ -34,12 +32,13 @@
 * {
     font-family: MapleMonoNF, Symbols Nerd Font; /* Cantarell, Symbols Nerd Font */
     font-weight: bolder;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 window#waybar {
     /*background-color: @crust;*/
-    background: rgba(30, 30, 46, 0.8);
+    background: rgba(0, 0, 0, 0.7);
+    /* background: rgba(30, 30, 46, 1); */
     color: @text;
     transition-property: background-color;
     transition-duration: .5s;

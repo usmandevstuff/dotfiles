@@ -11,7 +11,7 @@
     //    "hyprland/window"
     //],
     "modules-right": [
-        // "custom/cmus",
+        "custom/cmus",
         "custom/swaync",
 	"tray",
         "custom/sep",
@@ -33,10 +33,11 @@
         "on-click": "activate"
     },
     "custom/cmus": {
-        "format": "♪ {} | ",
-        // "max-length": 30,
+        "format": " ♪ | ",
+        "max-length": 40,
         "interval": 10,
-        "exec": "cmus-remote -C \"format_print '%a - %t'\"", // artist - title
+        "exec": "cmus-remote -C \"format_print '%t'\"", // artist - title
+        // "exec": "cmus-remote -C \"format_print '%a - %t'\"", // artist - title
         "exec-if": "pgrep cmus",
         "on-click": "cmus-remote -u",                        //toggle pause
         "escape": true                                       //handle markup entities
