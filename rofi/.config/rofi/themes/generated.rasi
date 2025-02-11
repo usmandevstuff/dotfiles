@@ -1,20 +1,20 @@
 * {
-    bg-col: #191724;
-    bg-col-transparent: #191724dd;
-    bg-col-element: #191724df;
-    bg-col-light: #c4a7e7;
-    border-col: #c4a7e7;
-    selected-col: #c4a7e7;
-    tab: #c4a7e7;
-    tab-selected: #191724;
-    fg-col: #e0def4;
-    fg-col2: #191724;
-    blank: #26233a;
-    blank-underline: #1f1d2e;
-    button: #c4a7e7;
-    button-underline: #ae91d0;
-    window: #353154;
-    window-underline: #2d2a47;
+    bg-col: #1d2021;
+    bg-col-transparent: #1d2021dd;
+    bg-col-element: #1d2021df;
+    bg-col-light: #689d6a;
+    border-col: #689d6a;
+    selected-col: #689d6a;
+    tab: #689d6a;
+    tab-selected: #1d2021;
+    fg-col: #ebdbb2;
+    fg-col2: #1d2021;
+    blank: #1f2223;
+    blank-underline: #191c1d;
+    button: #689d6a;
+    button-underline: #518554;
+    window: #303030;
+    window-underline: #272727;
 
     width: 600;
 }

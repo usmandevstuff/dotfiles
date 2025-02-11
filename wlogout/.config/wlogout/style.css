@@ -18,10 +18,13 @@ button {
 
 button:hover {
     background-color: rgba(49, 50, 68, 0.1);
+    /* background-color: #9B8D7F; */
+    /* color: #1e1e2e; */
 }
 
 button:focus {
     background-color: #cba6f7;
+    /* background-color: #9B8D7F; */
     color: #1e1e2e;
 }
 

@@ -1,0 +1,5 @@
+$Gruvbox Bubbles Dark (Extra, Built-In) -> ~/.config/hypr/extra_themes/gruvbox_dark_bubbles;
+$Everforest Medium Dark Clean (Extra, Built-In) -> ~/.config/hypr/extra_themes/everforest_medium_dark_clean;
+$Solarized Dark Clean (Extra, Built-In) -> ~/.config/hypr/extra_themes/solarized_dark_clean;
+$City (Extra, Built-In) -> ~/.config/hypr/extra_themes/city;
+$City Clean (Extra, Built-In) -> ~/.config/hypr/extra_themes/city_clean;

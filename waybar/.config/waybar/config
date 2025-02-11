@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "height": 30,
-    "spacing": 0,
+    "spacing": 5,
     // Choose the order of the modules
     "modules-left": [
         "hyprland/workspaces",
@@ -14,7 +14,6 @@
         "custom/cmus",
         "custom/swaync",
 	"tray",
-        "custom/sep",
         "pulseaudio",
         "backlight",
         "battery",
@@ -22,7 +21,7 @@
         "custom/powermenu"
 	],
     "hyprland/window": {
-        "format": "| {}",
+        "format": "{}",
         "separate-outputs": true,
         // "icon": true,
         // "icon-size": 14,
@@ -33,7 +32,7 @@
         "on-click": "activate"
     },
     "custom/cmus": {
-        "format": " ♪ | ",
+        "format": " ♪ ",
         "max-length": 40,
         "interval": 10,
         "exec": "cmus-remote -C \"format_print '%t'\"", // artist - title
@@ -43,7 +42,7 @@
         "escape": true                                       //handle markup entities
     },
     "custom/sep": {
-        "format": "{}|"
+        "format": "{}"
     },
     "tray": {
         // "icon-size": 21,
@@ -52,12 +51,12 @@
     "clock": {
         "tooltip-format": "{:%H:%M}",
         "tooltip": true,
-        "format-alt": "| {:%A, %B %d, %Y}",
-        "format": "| {:%I:%M %p}"
+        "format-alt": "{:%A, %B %d, %Y}",
+        "format": "{:%I:%M %p}"
     },
     "backlight": {
         // "device": "acpi_video1",
-        "format": "| {percent}% {icon}",
+        "format": "{percent}% {icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""],
         "tooltip-format": "Screen Brightness",
 	//    "on-click": "~/.config/hypr/waybar/scripts/save_brightness.sh",
@@ -110,7 +109,7 @@
             "tooltip": false,
         },
     "custom/powermenu": {
-            "format": "  ",
+            "format": " ",
             "on-click": "~/.config/waybar/scripts/powermenu.sh",
             "tooltip": false,
         },

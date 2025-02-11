@@ -1,0 +1,2 @@
+$Normal (Standard) -> normal;
+$Keyboard Setup (Someone Else's) -> keyboard_setup;
