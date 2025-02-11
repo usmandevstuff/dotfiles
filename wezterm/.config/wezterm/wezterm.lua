@@ -1,3 +1,4 @@
+require "colors"
 local wezterm = require("wezterm")
 
 local function font_with_fallback(name, params)

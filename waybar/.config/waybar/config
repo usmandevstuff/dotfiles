@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "height": 30,
-    "spacing": 5,
+    "spacing": 0,
     // Choose the order of the modules
     "modules-left": [
         "hyprland/workspaces",
@@ -11,9 +11,10 @@
     //    "hyprland/window"
     //],
     "modules-right": [
-        "custom/cmus",
+        // "custom/cmus",
         "custom/swaync",
 	"tray",
+        "custom/sep",
         "pulseaudio",
         "backlight",
         "battery",
@@ -21,7 +22,7 @@
         "custom/powermenu"
 	],
     "hyprland/window": {
-        "format": "{}",
+        "format": "| {}",
         "separate-outputs": true,
         // "icon": true,
         // "icon-size": 14,
@@ -32,17 +33,16 @@
         "on-click": "activate"
     },
     "custom/cmus": {
-        "format": " ♪ ",
-        "max-length": 40,
+        "format": "♪ {} | ",
+        // "max-length": 30,
         "interval": 10,
-        "exec": "cmus-remote -C \"format_print '%t'\"", // artist - title
-        // "exec": "cmus-remote -C \"format_print '%a - %t'\"", // artist - title
+        "exec": "cmus-remote -C \"format_print '%a - %t'\"", // artist - title
         "exec-if": "pgrep cmus",
         "on-click": "cmus-remote -u",                        //toggle pause
         "escape": true                                       //handle markup entities
     },
     "custom/sep": {
-        "format": "{}"
+        "format": "{}|"
     },
     "tray": {
         // "icon-size": 21,
@@ -51,12 +51,12 @@
     "clock": {
         "tooltip-format": "{:%H:%M}",
         "tooltip": true,
-        "format-alt": "{:%A, %B %d, %Y}",
-        "format": "{:%I:%M %p}"
+        "format-alt": "| {:%A, %B %d, %Y}",
+        "format": "| {:%I:%M %p}"
     },
     "backlight": {
         // "device": "acpi_video1",
-        "format": "{percent}% {icon}",
+        "format": "| {percent}% {icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""],
         "tooltip-format": "Screen Brightness",
 	//    "on-click": "~/.config/hypr/waybar/scripts/save_brightness.sh",
@@ -109,7 +109,7 @@
             "tooltip": false,
         },
     "custom/powermenu": {
-            "format": " ",
+            "format": "  ",
             "on-click": "~/.config/waybar/scripts/powermenu.sh",
             "tooltip": false,
         },

@@ -2,7 +2,7 @@ window {
     /* font-family: JetBrainsMono Nerd Font; */
     font-family: MapleMonoNF;
     font-size: 14pt;
-    color: #cdd6f4; /* text */
+    color: #BBBFBC; /* text */
     background-color: rgba(30, 30, 46, 0.5);
 }
 
@@ -23,7 +23,7 @@ button:hover {
 }
 
 button:focus {
-    background-color: #cba6f7;
+    background-color: #E3E8E4;
     /* background-color: #9B8D7F; */
     color: #1e1e2e;
 }

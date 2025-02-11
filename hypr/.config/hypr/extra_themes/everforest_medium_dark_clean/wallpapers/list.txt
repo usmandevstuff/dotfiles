@@ -1,5 +1,0 @@
-$DNA Helix -> dna_helix;
-$Gears -> gears;
-$Under Water -> under_water;
-$Under Water (Gray) -> under_water_gray;
-$Forest Staircase (Real Photo) -> forest_staircase;
