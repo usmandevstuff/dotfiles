@@ -2,18 +2,18 @@
     bg-col: #1d2021;
     bg-col-transparent: #1d2021dd;
     bg-col-element: #1d2021df;
-    bg-col-light: #e3e8e4;
-    border-col: #e3e8e4;
-    selected-col: #e3e8e4;
-    tab: #BBBFBC;
+    bg-col-light: #e0def4;
+    border-col: #e0def4;
+    selected-col: #e0def4;
+    tab: #b5b3c9;
     tab-selected: #1d2021;
-    fg-col: #ebdbb2;
+    fg-col: #e0def4;
     fg-col2: #1d2021;
-    blank: #1f2223;
+    blank: #1f1d2e;
     blank-underline: #191c1d;
-    button: #e3e8e4;
-    button-underline: #bbbfbc;
-    window: #303030;
+    button: #e0def4;
+    button-underline: #b5b3c9;
+    window: #191724;
     window-underline: #272727;
 
     width: 600;

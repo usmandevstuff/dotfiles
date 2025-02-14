@@ -23,7 +23,7 @@ button:hover {
 }
 
 button:focus {
-    background-color: #E3E8E4;
+    background-color: #E0DEF4;
     /* background-color: #9B8D7F; */
     color: #1e1e2e;
 }
