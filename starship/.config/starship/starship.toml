@@ -120,3 +120,7 @@ format = '[$symbol]($style)'
 [lua]
 symbol = '󰢱 '
 format = '[$symbol]($style)'
+
+[golang]
+symbol = ' '
+format = '[$symbol]($style)'
