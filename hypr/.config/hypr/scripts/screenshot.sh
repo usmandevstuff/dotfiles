@@ -3,13 +3,11 @@
 INPUT=$1
 
 fullscreen() {
-    grimblast save output
-    notify-send -t 400 "Screenshot Saved"
+    grimblast save output | xargs -I % notify-send -t 3800 "Screenshot Saved" % -i %
 }
 
 area() {
-    grimblast save area
-    notify-send -t 400 "Screenshot Saved"
+    grimblast save area | xargs -I % notify-send -t 3800 "Screenshot Saved" % -i %
 }
 
 case $INPUT in
