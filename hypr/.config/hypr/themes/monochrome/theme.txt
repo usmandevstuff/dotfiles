@@ -1,0 +1,7 @@
+$waybar-text -> #cdd6f4;
+$waybar-inactive-text -> #45475a;
+$waybar-hover-background -> #11111b;
+$waybar-battery -> #92DFD3;
+$waybar-battery-warning -> #f9e2af;
+$waybar-battery-critical -> #EB6F92;
+$waybar-power -> #EB6F92;

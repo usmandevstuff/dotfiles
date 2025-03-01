@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-kitty
+kitty || wezterm start || alacritty || exit 1

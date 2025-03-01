@@ -2,10 +2,6 @@
 ## Utility Functions
 ##
 
-function _tmux_sessionizer() {
-  ~/.local/bin/tmux-sessionizer
-}
-
 function _smooth_fzf() {
   local fname
   local current_dir="$PWD"
