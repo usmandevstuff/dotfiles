@@ -12,9 +12,11 @@
     //],
     "modules-right": [
         // "custom/cmus",
+        "idle_inhibitor",
         "custom/swaync",
 	"tray",
-        "custom/sep",
+        // "network",
+        // "custom/sep",
         "pulseaudio",
         "backlight",
         "battery",
@@ -22,8 +24,8 @@
         "custom/powermenu"
 	],
     "hyprland/window": {
-        "format": "| {}",
-        "separate-outputs": true,
+        "format": " {}",
+        "separate-outputs": true
         // "icon": true,
         // "icon-size": 14,
     },
@@ -32,8 +34,17 @@
         "all-outputs": true,
         "on-click": "activate"
     },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "tooltip-format-activated": "{icon} {status}",
+        "tooltip-format-deactivated": "{icon} {status}",
+        "format-icons": {
+            "activated": "󰍹 ",
+            "deactivated": "󰶐 "
+        }
+    },
     "custom/cmus": {
-        "format": "♪ {} | ",
+        "format": "♪ {}  ",
         // "max-length": 30,
         "interval": 10,
         "exec": "cmus-remote -C \"format_print '%a - %t'\"", // artist - title
@@ -42,21 +53,21 @@
         "escape": true                                       //handle markup entities
     },
     "custom/sep": {
-        "format": "{}|"
+        "format": "|"
     },
     "tray": {
         // "icon-size": 21,
         "spacing": 10
     },
     "clock": {
-        "tooltip-format": "{:%H:%M}",
+        "tooltip-format": "{:%A, %B %d, %Y | %H:%M}",
         "tooltip": true,
-        "format-alt": "| {:%A, %B %d, %Y}",
-        "format": "| {:%I:%M %p}"
+        "format-alt": "{:%A, %B %d, %Y}",
+        "format": "{:%I:%M %p}"
     },
     "backlight": {
         // "device": "acpi_video1",
-        "format": "| {percent}% {icon}",
+        "format": "{percent}% {icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""],
         "tooltip-format": "Screen Brightness",
 	//    "on-click": "~/.config/hypr/waybar/scripts/save_brightness.sh",
@@ -78,10 +89,10 @@
         "format-icons": [" ", " ", " ", " ", " "]
     },
     "network": {
-        "format-wifi": "󰤨",
-        "format-disconnected": "󰤭",
+        "format-wifi": "󰤨 {essid}",
+        "format-disconnected": "󰤭 ",
         "tooltip-format": "Connected to {essid}",
-        "on-click": "hyprctl dispatch exec '[float]' '$TERMINAL -e nmtui'"
+        "on-click": "hyprctl dispatch exec '[float]' 'kitty --class nmtui -e nmtui'"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
@@ -110,7 +121,7 @@
         },
     "custom/powermenu": {
             "format": "  ",
-            "on-click": "~/.config/waybar/scripts/powermenu.sh",
+            "on-click": "~/.config/rofi/scripts/power_menu.sh",
             "tooltip": false,
         },
 }

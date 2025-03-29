@@ -14,7 +14,7 @@ configuration {
     display-window: "   Window ";
 }
 
-@theme "themes/generated"
+@theme "~/.config/colorgen/output/rofi"
 
 element-text {
     background-color: #00000000;

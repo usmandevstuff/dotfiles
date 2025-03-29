@@ -27,4 +27,4 @@ truncation_length = 3
 truncation_symbol = '.. /'
 
 [git_branch]
-format = '[\[$branch\]]($style)'
+format = '[\($branch\)]($style)'

@@ -3,6 +3,7 @@
 ##
 
 alias vim='nvim'
+alias nv='neovide'
 alias run='pnpm run'
 alias c="clear"
 alias q="exit"

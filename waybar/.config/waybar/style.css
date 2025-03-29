@@ -2,12 +2,12 @@
 @define-color inactive-text #45475a;
 @define-color hover-backgound  #11111b;
 
-@define-color battery #92DFD3;
+@define-color battery #a6e3a1;
 @define-color battery-warning #f9e2af;
-@define-color battery-critical #EB6F92;
-@define-color power #EB6F92;
+@define-color battery-critical #f38ba8;
+@define-color power #f38ba8;
 
-/* @import "/home/usman/.config/hypr/generated/style.css"; */
+/* @import "/home/usman/.config/colorgen/output/waybar.css"; */
 
 * {
     font-family: JetBrainsMono Nerd Font, Symbols Nerd Font; /* Cantarell, Symbols Nerd Font */
@@ -16,7 +16,7 @@
 }
 
 window#waybar {
-    /*background-color: @hover-backgound;*/
+    /*background-color: @hover-backgound;   alpha(@color 0.3)   */
     background-color: rgba(30, 30, 46, 0.8);
     color: @text;
     transition-property: background-color;
@@ -27,6 +27,12 @@ window#waybar.hidden {
     opacity: 0.2;
 }
 
+#idle_inhibitor.activated {
+    color: @text;
+}
+#idle_inhibitor.deactivated {
+    color: @inactive-text;
+}
 /*
 window#waybar.empty {
     background-color: transparent;
@@ -35,15 +41,6 @@ window#waybar.solo {
     background-color: #FFFFFF;
 }
 */
-
-window#waybar.termite {
-    background-color: #3F3F3F;
-}
-
-window#waybar.chromium {
-    background-color: #000000;
-    border: none;
-}
 
 button {
     /* Use box-shadow instead of border so the text isn't offset */
@@ -75,11 +72,9 @@ button {
 }
 
 #workspaces button.active {
-    color: #000;
+    color: #fff;
     box-shadow: inherit;
     text-shadow: inherit;
-    background: @text;
-    border: @hover-backgound;
 }
 
 #workspaces button.urgent {
