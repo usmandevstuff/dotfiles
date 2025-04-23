@@ -2,6 +2,7 @@
 ## Aliases
 ##
 
+alias H='Hyprland'
 alias vim='nvim'
 alias nv='neovide'
 alias run='pnpm run'
