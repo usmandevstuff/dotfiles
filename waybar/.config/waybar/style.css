@@ -11,7 +11,6 @@
 
 * {
     font-family: JetBrainsMono Nerd Font, Symbols Nerd Font; /* Cantarell, Symbols Nerd Font */
-    font-weight: bolder;
     font-size: 14px;
 }
 
@@ -21,10 +20,6 @@ window#waybar {
     color: @text;
     transition-property: background-color;
     transition-duration: .5s;
-}
-
-window#waybar.hidden {
-    opacity: 0.2;
 }
 
 #idle_inhibitor.activated {

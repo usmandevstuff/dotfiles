@@ -25,22 +25,22 @@ white = "#f1efff"
 draw_bold_text_with_bright_colors = true
 
 [font]
-size = 16
+size = 14
 
 [font.bold]
-family = "IosevkaTerm Nerd Font"
+family = "JetBrainsMono Nerd Font"
 style = "Bold"
 
 [font.bold_italic]
-family = "IosevkaTerm Nerd Font"
+family = "JetBrainsMono Nerd Font"
 style = "BoldItalic"
 
 [font.italic]
-family = "IosevkaTerm Nerd Font"
+family = "JetBrainsMono Nerd Font"
 style = "MediumItalic"
 
 [font.normal]
-family = "IosevkaTerm Nerd Font"
+family = "JetBrainsMono Nerd Font"
 style = "Medium"
 
 [scrolling]
@@ -51,7 +51,7 @@ multiplier = 3
 save_to_clipboard = false
 
 [window]
-opacity = 0.95
+opacity = 0.80
 blur = true
 
 [cursor.style]
@@ -63,5 +63,5 @@ general = "Alacritty"
 instance = "Alacritty"
 
 [window.padding]
-x = 3
-y = 3
+x = 9
+y = 9

@@ -5,7 +5,9 @@ export PATH="/home/usman/.config/herd-lite/bin:$PATH"
 export BUN_INSTALL="$HOME/.bun" 
 export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="$HOME/.scripts:$PATH"
-export PATH="$HOME/.local/bin:$HOME/personal:$PATH"
+
+export PATH="$HOME/.local/bin:$HOME/personal:$HOME/Programming/flutter/bin:$HOME/Programming/go/bin:$PATH"
+
 export PATH="$HOME/.cargo/bin:$PATH"
 export GPG_TTY="${TTY:-$(tty)}"
 
