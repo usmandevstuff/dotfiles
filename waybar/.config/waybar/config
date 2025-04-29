@@ -143,10 +143,11 @@
             "tooltip": false,
         },
     "custom/powermenu": {
-            "format": "  ",
+            "format": "POWER",
             "on-click": "~/.config/rofi/scripts/power_menu.sh",
             "tooltip": false,
         },
 }
 
 // vim: ft=jsonc
+//

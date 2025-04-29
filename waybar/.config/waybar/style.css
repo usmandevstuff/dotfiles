@@ -94,7 +94,6 @@ button {
 #mpd {
     padding: 0 9px;
     color: @text;
-    border-radius: 15px;
     margin: 5px 0;
 }
 
@@ -139,6 +138,6 @@ button {
 
 #custom-powermenu {
   color: @power;
-  margin-right: 0px;
-  padding-right: 0;
+  margin: 0;
+  padding: 0;
 }
