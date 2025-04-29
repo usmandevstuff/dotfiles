@@ -11,7 +11,9 @@
 
 * {
     font-family: JetBrainsMono Nerd Font, Symbols Nerd Font; /* Cantarell, Symbols Nerd Font */
-    font-size: 14px;
+    font-size: 16px;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 window#waybar {
@@ -42,7 +44,6 @@ button {
     box-shadow: inset 0 -3px transparent;
     /* Avoid rounded borders under each button name */
     border: none;
-    border-radius: 3;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
@@ -56,7 +57,6 @@ button {
 }
 
 #workspaces button {
-    padding: 0 5px;
     color: @inactive-text;
     margin: 5px 0 3px 3px;
     transition: color 200ms ease-in-out;
@@ -91,7 +91,6 @@ button {
 #tray,
 #mode,
 #idle_inhibitor,
-#scratchpad,
 #mpd {
     padding: 0 9px;
     color: @text;
@@ -102,6 +101,11 @@ button {
 #window,
 #workspaces {
     margin: 0 4px;
+}
+
+#window {
+    padding-left: 0;
+    margin-left: 0;
 }
 
 /* If workspaces is the leftmost module, reduce left margin */
@@ -136,20 +140,5 @@ button {
 #custom-powermenu {
   color: @power;
   margin-right: 0px;
-}
-
-#keyboard-state > label {
-    padding: 0 5px;
-}
-
-#keyboard-state > label.locked {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad.empty {
-	background-color: transparent;
+  padding-right: 0;
 }

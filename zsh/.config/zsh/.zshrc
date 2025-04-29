@@ -4,6 +4,9 @@
 ##
 ## rxyhn's Z-Shell configuration
 ## https://github.com/rxyhn
+#usefull disk commands for cleaning
+# df -h
+# ncdu /
 
 # zmodload zsh/zprof
 
@@ -23,6 +26,8 @@ eval "$(fnm env --use-on-cd --shell zsh)"
 export STARSHIP_CONFIG=$XDG_CONFIG_HOME/starship/starship.toml; eval "$(starship init zsh)"
 # eval "$(zoxide init zsh)"
 unalias zi
+
+neofetch
 
 # zprof
 

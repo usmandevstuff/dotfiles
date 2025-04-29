@@ -4,24 +4,38 @@
     "spacing": 0,
     // Choose the order of the modules
     "modules-left": [
+        "custom/left_delimiter",
         "hyprland/workspaces",
-        "hyprland/window"
+        "custom/right_delimiter",
+        "custom/left_delimiter",
+        "hyprland/window",
+        "custom/right_delimiter",
     ],
     //"modules-center": [
     //    "hyprland/window"
     //],
     "modules-right": [
         // "custom/cmus",
+        "custom/left_delimiter",
         "idle_inhibitor",
         "custom/swaync",
 	"tray",
+        "custom/right_delimiter",
+        "custom/left_delimiter",
         // "network",
         // "custom/sep",
         "pulseaudio",
         "backlight",
+        "custom/right_delimiter",
+        "custom/left_delimiter",
         "battery",
+        "custom/right_delimiter",
+        "custom/left_delimiter",
 	"clock",
-        "custom/powermenu"
+        "custom/right_delimiter",
+        "custom/left_delimiter",
+        "custom/powermenu",
+        "custom/right_delimiter",
 	],
     "hyprland/window": {
         "format": " {}",
@@ -30,10 +44,19 @@
         // "icon-size": 14,
     },
     "hyprland/workspaces": {
+        "format": "({name})",
         "disable-scroll": true,
         "all-outputs": true,
-        "on-click": "activate"
+        "on-click": "activate",
     },
+
+    "custom/left_delimiter": {
+        "format": "[",
+    },
+    "custom/right_delimiter": {
+        "format": "]",
+    },
+
     "idle_inhibitor": {
         "format": "{icon}",
         "tooltip-format-activated": "{icon} {status}",
