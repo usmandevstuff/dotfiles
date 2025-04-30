@@ -25,6 +25,8 @@
         // "network",
         // "custom/sep",
         "pulseaudio",
+        "custom/right_delimiter",
+        "custom/left_delimiter",
         "backlight",
         "custom/right_delimiter",
         "custom/left_delimiter",
