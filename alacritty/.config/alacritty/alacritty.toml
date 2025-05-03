@@ -30,7 +30,7 @@ multiplier = 3
 save_to_clipboard = false
 
 [window]
-opacity = 0.80
+opacity = 0.90
 blur = false
 
 [cursor.style]
@@ -42,5 +42,5 @@ general = "Alacritty"
 instance = "Alacritty"
 
 [window.padding]
-x = 5
+x = 7
 y = 3
