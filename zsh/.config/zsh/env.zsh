@@ -1,6 +1,7 @@
 ##
 ## PATH & ENV Var
 ##
+
 export PATH="/home/usman/.config/herd-lite/bin:$PATH"
 export BUN_INSTALL="$HOME/.bun" 
 export PATH="$BUN_INSTALL/bin:$PATH"

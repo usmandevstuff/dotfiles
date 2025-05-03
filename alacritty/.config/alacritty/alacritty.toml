@@ -1,26 +1,5 @@
-[colors.primary]
-background = "#191724"
-foreground = "#e0def4"
+general.import = ["~/.config/alacritty/catppuccin.toml"]
 
-[colors.normal]
-black = "#353154"
-red = "#eb6f92"
-green = "#439169"
-yellow = "#f6c177"
-blue = "#31748f"
-magenta = "#c4a7e7"
-cyan = "#2f7f7d"
-white = "#e0def4"
-
-[colors.bright]
-black = "#47426d"
-red = "#ff80a7"
-green = "#4fa87a"
-yellow = "#ffd684"
-blue = "#398aaa"
-magenta = "#dcbbff"
-cyan = "#369693"
-white = "#f1efff"
 [colors]
 draw_bold_text_with_bright_colors = true
 
@@ -51,8 +30,8 @@ multiplier = 3
 save_to_clipboard = false
 
 [window]
-opacity = 0.95
-blur = true
+opacity = 0.80
+blur = false
 
 [cursor.style]
 shape = "Underline"
@@ -63,5 +42,5 @@ general = "Alacritty"
 instance = "Alacritty"
 
 [window.padding]
-x = 3
+x = 5
 y = 3

@@ -14,6 +14,7 @@ while read file
 do
   source "$ZDOTDIR/$file.zsh"
 done <<-EOF
+ohmyzsh
 env
 aliases
 utility
@@ -23,11 +24,9 @@ keybinds
 EOF
 
 eval "$(fnm env --use-on-cd --shell zsh)"
-export STARSHIP_CONFIG=$XDG_CONFIG_HOME/starship/starship.toml; eval "$(starship init zsh)"
+# export STARSHIP_CONFIG=$XDG_CONFIG_HOME/starship/starship.toml; eval "$(starship init zsh)"
 # eval "$(zoxide init zsh)"
 unalias zi
-
-neofetch
 
 # zprof
 
