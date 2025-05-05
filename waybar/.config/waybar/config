@@ -4,52 +4,53 @@
     "spacing": 0,
     // Choose the order of the modules
     "modules-left": [
-        "custom/left_delimiter",
         "hyprland/workspaces",
-        "custom/right_delimiter",
-        "custom/left_delimiter",
         "hyprland/window",
-        "custom/right_delimiter",
     ],
     //"modules-center": [
     //    "hyprland/window"
     //],
     "modules-right": [
         // "custom/cmus",
-        "custom/left_delimiter",
         "idle_inhibitor",
         "custom/swaync",
 	"tray",
-        "custom/right_delimiter",
-        "custom/left_delimiter",
         // "network",
-        // "custom/sep",
+        "custom/sep",
         "pulseaudio",
-        "custom/right_delimiter",
-        "custom/left_delimiter",
+        "custom/sep",
         "backlight",
-        "custom/right_delimiter",
-        "custom/left_delimiter",
+        "custom/sep",
         "battery",
-        "custom/right_delimiter",
-        "custom/left_delimiter",
+        "custom/sep",
 	"clock",
-        "custom/right_delimiter",
-        "custom/left_delimiter",
+        "custom/sep",
         "custom/powermenu",
-        "custom/right_delimiter",
 	],
     "hyprland/window": {
-        "format": " {}",
+        "format": "|{}",
         "separate-outputs": true
         // "icon": true,
         // "icon-size": 14,
     },
     "hyprland/workspaces": {
-        "format": "({name})",
+        "format": "{icon}",
         "disable-scroll": true,
         "all-outputs": true,
         "on-click": "activate",
+        "format-icons": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "active": "*",
+        },
     },
 
     "custom/left_delimiter": {
@@ -78,7 +79,7 @@
         "escape": true                                       //handle markup entities
     },
     "custom/sep": {
-        "format": "|"
+        "format": "-"
     },
     "tray": {
         // "icon-size": 21,
