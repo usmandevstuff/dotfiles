@@ -1,4 +1,4 @@
-general.import = ["~/.config/alacritty/catppuccin.toml"]
+general.import = ["~/.config/alacritty/rose-pine.toml"]
 
 [colors]
 draw_bold_text_with_bright_colors = true
@@ -30,7 +30,7 @@ multiplier = 3
 save_to_clipboard = false
 
 [window]
-opacity = 0.90
+opacity = 0.80
 blur = false
 
 [cursor.style]

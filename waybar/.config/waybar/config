@@ -13,7 +13,7 @@
     "modules-right": [
         // "custom/cmus",
         "idle_inhibitor",
-        "custom/swaync",
+        // "custom/swaync",
 	"tray",
         // "network",
         "custom/sep",
@@ -24,8 +24,6 @@
         "battery",
         "custom/sep",
 	"clock",
-        "custom/sep",
-        "custom/powermenu",
 	],
     "hyprland/window": {
         "format": "|{}",
@@ -89,7 +87,7 @@
         "tooltip-format": "{:%A, %B %d, %Y | %H:%M}",
         "tooltip": true,
         "format-alt": "{:%A, %B %d, %Y}",
-        "format": "{:%I:%M %p}"
+        "format": "{:%A, %B %d, %Y %I:%M %p}"
     },
     "backlight": {
         // "device": "acpi_video1",
@@ -122,10 +120,10 @@
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon} {format_source}",
+        "format": "{volume}% {icon}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": "  {icon} {format_source}",
-        "format-muted": "  {format_source}",
+        "format-muted": " ",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
@@ -140,7 +138,7 @@
         "on-click": "pavucontrol"
     },
     "custom/swaync": {
-            "format": " ",
+            "format": "!",
             "on-click": "~/.config/swaync/scripts/tray_waybar.sh",
             "on-click-right": "swaync-client -C",
             "tooltip": false,
