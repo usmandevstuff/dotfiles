@@ -26,7 +26,7 @@
 	"clock",
 	],
     "hyprland/window": {
-        "format": "|{}",
+        "format": "| {}",
         "separate-outputs": true
         // "icon": true,
         // "icon-size": 14,
@@ -47,7 +47,10 @@
             "8": "8",
             "9": "9",
             "10": "10",
-            "active": "*",
+            // "urgent": "",
+            // "active": "",
+            // "default": ""
+
         },
     },
 
@@ -87,7 +90,7 @@
         "tooltip-format": "{:%A, %B %d, %Y | %H:%M}",
         "tooltip": true,
         "format-alt": "{:%A, %B %d, %Y}",
-        "format": "{:%A, %B %d, %Y %I:%M %p}"
+        "format": "{:%A, %B %d, %I:%M %p}"
     },
     "backlight": {
         // "device": "acpi_video1",

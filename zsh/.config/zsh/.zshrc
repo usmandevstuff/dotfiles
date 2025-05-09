@@ -7,6 +7,7 @@
 #usefull disk commands for cleaning
 # df -h
 # ncdu /
+# dysk
 
 # zmodload zsh/zprof
 

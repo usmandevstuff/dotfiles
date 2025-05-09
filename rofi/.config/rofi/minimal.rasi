@@ -19,7 +19,7 @@ configuration {
 @theme "/dev/null"
 
 * {
-    bg: #232933;
+    bg: #000000;
     fg: #d8dee9;
     selected: #2d3543;
     accent: #4d6a8e;
