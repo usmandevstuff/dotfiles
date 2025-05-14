@@ -2,7 +2,7 @@
 [global]
 follow = mouse
 indicate_hidden = yes
-offset = 10x10
+offset = (10,10)
 notification_height = 0
 
 separator_height = 2
@@ -17,7 +17,7 @@ separator_color = frame
 
 sort = yes
 idle_threshold = 120
-font = monospace 10
+font = IosevkaTerm Nerd Font 12
 line_height = 0
 markup = full
 alignment = left
@@ -34,13 +34,13 @@ max_icon_size = 64
 
 icon_path = /usr/share/icons/Papirus-Dark/16x16/status/:/usr/share/icons/Papirus-Dark/16x16/devices/:/usr/share/icons/Papirus-Dark/16x16/actions/:/usr/share/icons/Papirus-Dark/16x16/animations/:/usr/share/icons/Papirus-Dark/16x16/apps/:/usr/share/icons/Papirus-Dark/16x16/categories/:/usr/share/icons/Papirus-Dark/16x16/emblems/:/usr/share/icons/Papirus-Dark/16x16/emotes/:/usr/share/icons/Papirus-Dark/16x16/devices/mimetypes:/usr/share/icons/Papirus-Dark/16x16/panel/:/usr/share/icons/Papirus-Dark/16x16/places/
 
-dmenu = /usr/bin/wofi -p dunst:
+dmenu = /usr/bin/rofi -p dunst:
 browser = /usr/bin/firefox --new-tab
 
 title = Dunst
 class = Dunst
 
-corner_radius = 10
+corner_radius = 5
 timeout = 5
 [urgency_low]
 background = "#1E1E2E"

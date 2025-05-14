@@ -29,6 +29,8 @@ eval "$(fnm env --use-on-cd --shell zsh)"
 # eval "$(zoxide init zsh)"
 unalias zi
 
+neofetch
+
 # zprof
 
 # vim:ft=zsh:nowrap

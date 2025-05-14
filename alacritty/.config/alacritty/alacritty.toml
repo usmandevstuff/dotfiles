@@ -1,10 +1,10 @@
 general.import = ["~/.config/alacritty/rose-pine.toml"]
 
 [colors]
-draw_bold_text_with_bright_colors = true
+draw_bold_text_with_bright_colors = false
 
 [font]
-size = 16
+size = 14
 
 [font.bold]
 family = "IosevkaTerm Nerd Font"
@@ -20,7 +20,7 @@ style = "MediumItalic"
 
 [font.normal]
 family = "IosevkaTerm Nerd Font"
-style = "Medium"
+style = "Regular"
 
 [scrolling]
 history = 10000
@@ -30,7 +30,7 @@ multiplier = 3
 save_to_clipboard = false
 
 [window]
-opacity = 0.50
+opacity = 0.70
 blur = false
 
 [cursor.style]
@@ -43,4 +43,4 @@ instance = "Alacritty"
 
 [window.padding]
 x = 7
-y = 3
+y = 5
