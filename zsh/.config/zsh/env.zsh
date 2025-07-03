@@ -13,7 +13,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export GPG_TTY="${TTY:-$(tty)}"
 
 # export SUDO_PROMPT="󰚌 Password: "
-export TERMINAL="kitty"
+export TERMINAL="alacritty"
 export BROWSER="thorium-browser"
 export VISUAL="nvim"
 export EDITOR="nvim"

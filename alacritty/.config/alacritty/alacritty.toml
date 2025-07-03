@@ -1,4 +1,4 @@
-general.import = ["~/.config/alacritty/catppuccin.toml"]
+general.import = ["~/.config/alacritty/rose-pine.toml"]
 
 [colors]
 draw_bold_text_with_bright_colors = false
