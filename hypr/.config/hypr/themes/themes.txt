@@ -1,9 +1,0 @@
-$Gruvbox Dark (Default, Built-In) -> ~/.config/hypr/themes/gruvbox_dark;
-$Everforest Medium Dark (Built-In) -> ~/.config/hypr/themes/everforest_medium_dark;
-$Solarized Dark (Built-In) -> ~/.config/hypr/themes/solarized_dark;
-$Nord Dark (Built-In) -> ~/.config/hypr/themes/nord_dark;
-$Silk Dark (Built-In) -> ~/.config/hypr/themes/silk_dark;
-$Ayu Dark (Built-In) -> ~/.config/hypr/themes/ayu_dark;
-$Rose Pine (Built-In) -> ~/.config/hypr/themes/rose_pine;
-$Catppuccin Frappé (Built-In) -> ~/.config/hypr/themes/catppuccin_frappé;
-$MonoChrome (Built-In) -> ~/.config/hypr/themes/monochrome;

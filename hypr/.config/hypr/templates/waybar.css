@@ -1,7 +1,0 @@
-@define-color text @--waybar-text--;
-@define-color inactive-text @--waybar-inactive-text--;
-@define-color hover-background @--waybar-hover-background--;
-@define-color battery @--waybar-battery--;
-@define-color battery-warning @--waybar-battery-warning--;
-@define-color battery-critical @--waybar-battery-critical--;
-@define-color power @--waybar-power--;

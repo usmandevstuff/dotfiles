@@ -1,7 +1,7 @@
 configuration {
 	modi: "drun";
 	font: "JetBrainsMono Nerd Font 12";
-	show-icons: false;
+	show-icons: true;
 	terminal: "kitty";
 	icon-theme: "Papirus-Dark";
 	drun-display-format: "{name}";
@@ -35,7 +35,8 @@ configuration {
 }
 
 window {
-    width: 700px;
+    // border-radius: 10;
+    width: 500px;
 }
 
 element {
@@ -88,6 +89,6 @@ entry {
 
 listview {
     background-color: @bg;
-    columns: 3;
+    columns: 1;
     lines: 6;
 }
