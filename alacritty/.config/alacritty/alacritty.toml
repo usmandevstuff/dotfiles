@@ -4,7 +4,7 @@ general.import = ["~/.config/alacritty/catppuccin.toml"]
 draw_bold_text_with_bright_colors = false
 
 [font]
-size = 14
+size = 12
 
 [font.bold]
 family = "JetBrainsMono Nerd Font"

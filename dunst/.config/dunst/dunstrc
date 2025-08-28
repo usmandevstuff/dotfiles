@@ -11,7 +11,7 @@ horizontal_padding = 8
 text_icon_padding = 0
 frame_width = 2
 
-frame_color = "#f5c2e7"
+frame_color = "#FFFFFF"
 separator_color = frame
 
 sort = yes

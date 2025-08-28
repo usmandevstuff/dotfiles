@@ -21,7 +21,7 @@ vol=$(pactl get-sink-volume @DEFAULT_SINK@ | awk '{print $5}' | head -n1)
 mute=$(pactl get-sink-mute @DEFAULT_SINK@ | awk '{print $2}')
 
 if [ "$mute" = "yes" ]; then
-    notify-send -t 800 -h string:x-canonical-private-synchronous:volume "🔇 Muted"
+    notify-send -t 800 -h string:x-canonical-private-synchronous:volume "  Muted"
 else
-    notify-send -t 800 -h string:x-canonical-private-synchronous:volume "🔊 Volume: $vol"
+    notify-send -t 800 -h string:x-canonical-private-synchronous:volume "  Volume: $vol"
 fi

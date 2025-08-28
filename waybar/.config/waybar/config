@@ -53,11 +53,6 @@
             "deactivated": "󰶐 "
         }
     },
-  "custom/omarchy": {
-    "format": "",
-    "on-click": "omarchy-menu",
-    "tooltip-format": "Omarchy Menu\n\nSuper + Alt + Space"
-  },
   "cpu": {
     "interval": 5,
     "format": "󰍛",
@@ -80,7 +75,7 @@
     "tooltip-format-disconnected": "Disconnected",
     "interval": 3,
     "nospacing": 1,
-    "on-click": "alacritty --class=Impala -e impala"
+    "on-click": "kitty --class=Impala -e impala"
   },
   "battery": {
     "format": "{capacity}% {icon}",

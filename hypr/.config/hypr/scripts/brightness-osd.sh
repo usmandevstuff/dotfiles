@@ -26,4 +26,4 @@ brightness=$(brightnessctl g)
 max=$(brightnessctl m)
 percent=$((brightness * 100 / max))
 
-notify-send -t 800 -h string:x-canonical-private-synchronous:brightness "☀️ Brightness: ${percent}%"
+notify-send -t 800 -h string:x-canonical-private-synchronous:brightness "  Brightness: ${percent}%"
